@@ -158,12 +158,17 @@
         "
         ></a-box>
         </a-scene>
-        </script>
+    <!-- JavaScript -->
+    <script>
+      const music = document.getElementById('bg-music');
+      const startBtn = document.getElementById('start-button');
+      const countdownEl = document.getElementById('countdown');
+
       startBtn.addEventListener('click', () => {
         startBtn.style.display = 'none';
         startCountdown();
       });
-      
+
       function startCountdown() {
         let count = 3;
         countdownEl.style.display = 'block';
@@ -182,7 +187,4 @@
       }
     </script>
     </body>
-      const music = document.getElementById('bg-music');
-      const startBtn = document.getElementById('start-button');
-      const countdownEl = document.getElementById('countdown');
 </html>
